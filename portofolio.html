@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portofolio Hadi Yulianto</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<style>
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #121212;
+    color: #e0e0e0;
+  }
+  .navbar {
+    background-color: #1f1f1f !important;
+  }
+  .navbar .navbar-brand,
+  .navbar button {
+    color: #e0e0e0 !important;
+  }
+  .hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: #ffffff;
+    text-align: center;
+    padding-top: 60px;
+  }
+  .hero h1 {
+    font-size: 3rem;
+    font-weight: bold;
+  }
+  .hero p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+  }
+  section {
+    background-color: #1e1e1e;
+    padding: 60px 0;
+    border-radius: 12px;
+    margin-bottom: 20px;
+  }
+  .card {
+    background-color: #2a2a2a;
+    color: #e0e0e0;
+    border: none;
+  }
+  .card .card-title {
+    color: #ffffff;
+  }
+  .about-img {
+    max-width: 280px;
+    max-height: 280px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #ffffff;
+  }
+  footer {
+    background-color: #1f1f1f;
+    padding: 20px 0;
+    text-align: center;
+    color: #aaa;
+  }
+  .btn {
+    border-radius: 8px;
+  }
+  .btn-light {
+    background-color: #ffffff;
+    color: #121212;
+  }
+  .btn-outline-primary,
+  .btn-outline-secondary {
+    border-color: #888;
+    color: #ddd;
+  }
+  .btn-outline-primary:hover,
+  .btn-outline-secondary:hover {
+    background-color: #444;
+    color: #fff;
+  }
+</style>
+</head>
+<body>
+
+  <!-- Navbar dengan Language Toggle -->
+  <nav class="navbar navbar-expand-lg navbar-light shadow-sm fixed-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">Hadi Yulianto</a>
+      <div class="d-flex">
+        <button class="btn btn-outline-primary me-2" onclick="setLanguage('id')">🇮🇩 Indonesia</button>
+        <button class="btn btn-outline-secondary" onclick="setLanguage('en')">🇬🇧 English</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div>
+      <h1 data-lang-id="hero-title">Halo, Saya Hadi Yulianto</h1>
+      <p data-lang-id="hero-subtitle">Multimedia Enthusiast | Siap Berkembang & Berkontribusi</p>
+      <a href="#about" class="btn btn-light mt-3" data-lang-id="hero-btn">Lihat Profil</a>
+    </div>
+  </section>
+
+  <!-- Tentang Saya -->
+  <section class="container py-5" id="about">
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <img src="fotoprofile.jpg" class="img-fluid rounded-4 shadow about-img" alt="Foto Hadi Yulianto">
+      </div>
+      <div class="col-md-6">
+        <h2 class="fw-bold" data-lang-id="about-title">Tentang Saya</h2>
+        <p data-lang-id="about-text">
+          Saya Hadi Yulianto, biasa dipanggil Hadi. Saya adalah individu yang berdedikasi, 
+          memiliki semangat untuk terus belajar dan berkembang. 
+          Saya siap untuk bergabung dengan tim yang dinamis dan berkontribusi pada kesuksesan organisasi.
+        </p>
+        <ul class="list-unstyled">
+          <li><strong data-lang-id="dob">Tanggal Lahir:</strong> 08 Juli 1997</li>
+          <li><strong data-lang-id="address">Alamat:</strong> Jl. Balana no. 45, Makassar, Indonesia</li>
+          <li><strong data-lang-id="phone">Telepon:</strong> 0877-9117-2529</li>
+          <li><strong data-lang-id="email">Email:</strong> hdiiyulianto08@gmail.com</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pendidikan -->
+  <section class="container py-5" id="education">
+    <h2 class="fw-bold text-center mb-4" data-lang-id="edu-title">Pendidikan</h2>
+    <ul class="list-group">
+      <li class="list-group-item" data-lang-id="edu-1">SD Negeri Bawakaraeng I (2004 - 2010)</li>
+      <li class="list-group-item" data-lang-id="edu-2">SMP Ittihad Makassar (2010 - 2013)</li>
+      <li class="list-group-item" data-lang-id="edu-3">SMA Ittihad Makassar (2013 - 2015)</li>
+      <li class="list-group-item" data-lang-id="edu-4">Universitas Teknologi Akba Makassar (2020 - 2025)</li>
+    </ul>
+  </section>
+
+  <!-- Pengalaman Editing -->
+  <section class="container py-5" id="experience">
+    <h2 class="fw-bold text-center mb-4" data-lang-id="exp-title">Pengalaman Editing</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card shadow-sm">
+          <div class="card-body text-center">
+            <h5 class="card-title">Adobe Premiere Pro</h5>
+            <p class="card-text" data-lang-id="exp-1">
+              Mampu melakukan editing video profesional, termasuk pemotongan, color grading, dan efek transisi.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card shadow-sm">
+          <div class="card-body text-center">
+            <h5 class="card-title">Filmora</h5>
+            <p class="card-text" data-lang-id="exp-2">
+              Pengalaman membuat video presentasi dan konten media sosial dengan efek siap pakai.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card shadow-sm">
+          <div class="card-body text-center">
+            <h5 class="card-title">CapCut</h5>
+            <p class="card-text" data-lang-id="exp-3">
+              Terbiasa membuat konten singkat untuk TikTok dan Instagram dengan template modern.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Keterampilan -->
+  <section class="container py-5" id="skills">
+    <h2 class="fw-bold text-center mb-4" data-lang-id="skills-title">Keterampilan</h2>
+    <div class="row text-center">
+      <div class="col-md-4"><div class="p-3 border rounded shadow-sm">Multimedia</div></div>
+      <div class="col-md-4"><div class="p-3 border rounded shadow-sm">Microsoft Word</div></div>
+      <div class="col-md-4"><div class="p-3 border rounded shadow-sm">Microsoft Excel</div></div>
+    </div>
+  </section>
+
+  <!-- Kontak -->
+  <section class="container py-5" id="contact">
+    <h2 class="text-center fw-bold mb-4" data-lang-id="contact-title">Hubungi Saya</h2>
+    <div class="row justify-content-center">
+      <div class="col-md-6 text-center">
+        <p><strong data-lang-id="phone">Telepon:</strong> 0877-9117-2529</p>
+        <p><strong data-lang-id="email">Email:</strong> hdiiyulianto08@gmail.com</p>
+        <p><strong data-lang-id="address">Alamat:</strong> Jl. Balana no. 45, Makassar</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Hadi Yulianto. <span data-lang-id="footer">Dibuat dengan ❤️ menggunakan Bootstrap.</span></p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Bahasa dictionary
+    const translations = {
+      id: {
+        "hero-title": "Halo, Saya Hadi Yulianto",
+        "hero-subtitle": "Multimedia Enthusiast | Siap Berkembang & Berkontribusi",
+        "hero-btn": "Lihat Profil",
+        "about-title": "Tentang Saya",
+        "about-text": "Saya Hadi Yulianto, biasa dipanggil Hadi. Saya adalah individu yang berdedikasi, memiliki semangat untuk terus belajar dan berkembang. Saya siap untuk bergabung dengan tim yang dinamis dan berkontribusi pada kesuksesan organisasi.",
+        "dob": "Tanggal Lahir:",
+        "address": "Alamat:",
+        "phone": "Telepon:",
+        "email": "Email:",
+        "edu-title": "Pendidikan",
+        "edu-1": "SD Negeri Bawakaraeng I (2004 - 2010)",
+        "edu-2": "SMP Ittihad Makassar (2010 - 2013)",
+        "edu-3": "SMA Ittihad Makassar (2013 - 2015)",
+        "edu-4": "Universitas Teknologi Akba Makassar (2020 - 2025)",
+        "exp-title": "Pengalaman Editing",
+        "exp-1": "Mampu melakukan editing video profesional, termasuk pemotongan, color grading, dan efek transisi.",
+        "exp-2": "Pengalaman membuat video presentasi dan konten media sosial dengan efek siap pakai.",
+        "exp-3": "Terbiasa membuat konten singkat untuk TikTok dan Instagram dengan template modern.",
+        "skills-title": "Keterampilan",
+        "contact-title": "Hubungi Saya",
+        "footer": "Dibuat dengan ❤️ menggunakan Bootstrap."
+      },
+      en: {
+        "hero-title": "Hello, I'm Hadi Yulianto",
+        "hero-subtitle": "Multimedia Enthusiast | Ready to Grow & Contribute",
+        "hero-btn": "View Profile",
+        "about-title": "About Me",
+        "about-text": "I am Hadi Yulianto, usually called Hadi. I am a dedicated individual with a passion for continuous learning and development. I am ready to join a dynamic team and contribute to organizational success.",
+        "dob": "Date of Birth:",
+        "address": "Address:",
+        "phone": "Phone:",
+        "email": "Email:",
+        "edu-title": "Education",
+        "edu-1": "Bawakaraeng I Elementary School (2004 - 2010)",
+        "edu-2": "Ittihad Makassar Junior High School (2010 - 2013)",
+        "edu-3": "Ittihad Makassar Senior High School (2013 - 2015)",
+        "edu-4": "Akba University of Technology Makassar (2020 - 2025)",
+        "exp-title": "Editing Experience",
+        "exp-1": "Able to perform professional video editing, including cutting, color grading, and transition effects.",
+        "exp-2": "Experience creating presentation videos and social media content with ready-to-use effects.",
+        "exp-3": "Skilled in creating short content for TikTok and Instagram using modern templates.",
+        "skills-title": "Skills",
+        "contact-title": "Contact Me",
+        "footer": "Made with ❤️ using Bootstrap."
+      }
+    };
+
+    function setLanguage(lang) {
+      document.querySelectorAll("[data-lang-id]").forEach(el => {
+        const key = el.getAttribute("data-lang-id");
+        if(translations[lang][key]) {
+          el.innerHTML = translations[lang][key];
+        }
+      });
+    }
+  </script>
+</body>
+</html>
